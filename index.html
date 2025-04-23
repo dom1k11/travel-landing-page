@@ -25,7 +25,16 @@
     <section class="hero-block">
       <header>
         <div style="display: flex; justify-content: space-between">
-          <input type="text" placeholder="Search" />
+          <div class="search-field-wrapper">
+            <span class="search-prefix">
+              <img
+                src="/icons/search-white.svg"
+                alt="Search Icon"
+                style="height: 75%"
+              />
+            </span>
+            <input class="search-field" type="text" placeholder="Search" />
+          </div>
           <!-- Search -->
           <img src="./icons/globe-white.svg" alt="Logo" />
           <div>
@@ -35,37 +44,42 @@
           </div>
         </div>
       </header>
+      <hr style="border: 1px solid white" />
+      <div class="hero-content">
+        <div class="hero-header">
+          <label style="color: white">Year long travel</label>
+          <h1>
+            Book your next<br />
+            destination
+          </h1>
+        </div>
 
-      <label style="color: white">Year long travel</label>
-      <h1>
-        <h1>
-          Book your next<br />
-          destination
-        </h1>
-      </h1>
-      <!-- Booking form -->
+        <!-- Booking form -->
 
-      <div class="booking-form">
-        <div class="row">
-          <div class="col-md-2">
-            <select class="form-control">
-              <option>Paris</option>
-              <option>London</option>
-            </select>
-          </div>
-          <div class="col-md-4 d-flex">
-            <input type="date" class="form-control mr-2" />
-            <input type="date" class="form-control" />
-          </div>
-          <div class="col-md-2">
-            <input
-              type="number"
-              class="form-control"
-              placeholder="How many guests?"
-            />
-          </div>
-          <div class="col-md-2">
-            <button class="btn btn-primary">-></button>
+        <div class="booking-form">
+          <div class="row">
+            <div class="col-md">
+              <select class="form-control">
+                <option>Paris</option>
+                <option>London</option>
+              </select>
+            </div>
+            <div class="col-md d-flex">
+              <input type="date" class="form-control" />
+            </div>
+            <div class="col-md d-flex">
+              <input type="date" class="form-control" />
+            </div>
+            <div class="col-md">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="How many guests?"
+              />
+            </div>
+            <div class="col-md-1">
+              <button class="btn btn-primary">-></button>
+            </div>
           </div>
         </div>
       </div>

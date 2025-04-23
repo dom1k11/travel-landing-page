@@ -1,22 +1,51 @@
 header {
-  /* background-color: #333; */
   color: bisque;
   padding: 10px;
   text-align: center;
 }
 
 .hero-block {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("/images/header.jpg");
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  justify-content:center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-h1
+.hero-content {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+.form-control
 {
-    color: white;
+    width: 100%;
+}
+  
+.booking-form .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+h1 {
+  color: white;
+}
+.search-field {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.search-field::placeholder {
+  color: white;
 }
