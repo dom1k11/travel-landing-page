@@ -24,31 +24,35 @@
   <body>
     <section class="hero-block">
       <header>
-        <div style="display: flex; justify-content: space-between">
-          <div class="search-field-wrapper">
-            <span class="search-prefix">
-              <img
-                src="/icons/search-white.svg"
-                alt="Search Icon"
-                style="height: 75%"
-              />
-            </span>
-            <input class="search-field" type="text" placeholder="Search" />
-          </div>
-          <!-- Search -->
-          <img src="./icons/globe-white.svg" alt="Logo" />
-          <div>
-            <button>Destinations</button>
-            <button>Sign in</button>
-            <img src="./icons/three-bars-white.svg" alt="Menu" />
-          </div>
+        <!-- left menu -->
+        <div>
+          <span class="search-prefix">
+            <img src="/icons/search-white.svg" style="padding-right: 10px" />
+          </span>
+          <input class="search-field" type="text" placeholder="Search" />
+        </div>
+        <!-- Search -->
+        <img src="./icons/globe-white.svg" />
+        <div>
+          <!-- right menu -->
+          <button
+            type="button"
+            class="btn btn-light"
+            style="background-color: transparent; border: none; color: white"
+          >
+            Destinations
+          </button>
+          <button type="button" class="btn btn-light">Sign In</button>
+          <!-- <img src="./icons/three-bars-white.svg" alt="Menu" /> -->
         </div>
       </header>
       <hr style="border: 1px solid white" />
       <div class="hero-content">
         <div class="hero-header">
-          <label style="color: white">Year long travel</label>
-          <h1>
+          <label style="color: white; font-weight: bold"
+            >YEAR LONG TRAVEL</label
+          >
+          <h1 style="font-weight: bold">
             Book your next<br />
             destination
           </h1>
@@ -56,32 +60,40 @@
 
         <!-- Booking form -->
 
-        <div class="booking-form">
-          <div class="row">
-            <div class="col-md">
-              <select class="form-control">
-                <option>Paris</option>
-                <option>London</option>
-              </select>
-            </div>
-            <div class="col-md d-flex">
-              <input type="date" class="form-control" />
-            </div>
-            <div class="col-md d-flex">
-              <input type="date" class="form-control" />
-            </div>
-            <div class="col-md">
-              <input
-                type="number"
-                class="form-control"
-                placeholder="How many guests?"
-              />
-            </div>
-            <div class="col-md-2">
-              <button class="btn btn-primary-block">
-                <img src="/icons/arrow-right.svg" />
-              </button>
-            </div>
+        <div class="row booking-form">
+          <div class="col-md">
+            <label for="destination">Destination</label>
+            <select class="form-select" name="destination">
+              <option selected>Select Destination</option>
+              <option>Paris</option>
+              <option>San Francisco</option>
+              <option>Sydney</option>
+              <option>Tokyo</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <label for="date-from">From</label>
+            <input type="date" name="date-from" class="form-control" />
+          </div>
+          <div class="col-md">
+            <label for="date-to">To</label>
+            <input type="date" name="date-to" class="form-control" />
+          </div>
+          <div class="col-md">
+            <label for="guests">Guests</label>
+            <input
+              name="guests"
+              type="number"
+              class="form-control"
+              placeholder="How many guests?"
+              min="1"
+              max="10"
+            />
+          </div>
+          <div class="col-md">
+            <button class="btn btn-primary">
+              <img src="/icons/arrow-right.svg" />
+            </button>
           </div>
         </div>
       </div>
