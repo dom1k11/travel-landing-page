@@ -125,18 +125,20 @@
       <div class="images-row">
         <div class="row justify-content-center">
           <div class="col-auto d-flex justify-content-center flex-wrap gap-2">
-            <img src="images/destinations/paris.jpg" class="destination-img">
-            <img src="images/destinations/san-francisco.jpg" class="destination-img">
-            <img src="images/destinations/sydney.jpg" class="destination-img">
-            <img src="images/destinations/tokyo.jpg" class="destination-img">
+            <img src="images/destinations/paris.jpg" class="destination-img" />
+            <img
+              src="images/destinations/san-francisco.jpg"
+              class="destination-img"
+            />
+            <img src="images/destinations/sydney.jpg" class="destination-img" />
+            <img src="images/destinations/tokyo.jpg" class="destination-img" />
           </div>
         </div>
       </div>
-      
     </section>
 
     <footer>
-      <div class="row">
+      <div class="row footer-row">
         <div class="col-md-2">
           Links
           <a href="#" style="display: block">Home</a>
@@ -153,9 +155,12 @@
             euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
           </p>
           <form>
-            <input type="email" placeholder="Enter your email" />
-
-            <button type="submit">Subscribe</button>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Email" />
+              <div class="input-group-append">
+                <button class="btn btn-success" type="button">Subscribe</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>

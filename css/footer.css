@@ -1,7 +1,17 @@
-footer
+footer {
+  background-color: #ffc107;
+  color: bisque;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-row {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  color: black;
+}
+a
 {
-    background-color: #ffc107;
-    color: bisque;
-    text-align: center;
-    padding: 20px 0;
+    color: black;
 }
