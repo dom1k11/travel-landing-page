@@ -17,8 +17,8 @@ header {
   position: relative;
   justify-content: center;
   padding-top: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .hero-content {
@@ -26,7 +26,8 @@ header {
     bottom: 30px;
     left: 0;
     width: 100%;
-    padding: 0 5%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
 .form-control
