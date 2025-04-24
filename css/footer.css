@@ -29,3 +29,11 @@ a
     border-radius: 50px;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}

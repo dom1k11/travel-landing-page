@@ -26,105 +26,130 @@
       <header class="py-3">
         <div class="container">
           <div class="row align-items-center">
-      
-            
             <div class="col-4 d-flex justify-content-start">
-              <img src = "/icons/search-white.svg">
-              <input class="form-control search-field" type="text" placeholder="Search" />
+              <img src="/icons/search-white.svg" />
+              <input
+                class="form-control search-field"
+                type="text"
+                placeholder="Search"
+              />
             </div>
-      
-           
+
             <div class="col-4 d-flex justify-content-center">
               <img src="./icons/globe-white.svg" alt="Logo" />
             </div>
-      
-         
+
             <div class="col-4 d-flex justify-content-end align-items-center">
               <div class="d-none d-md-flex gap-2">
-                <button class="btn btn-light" style="background: transparent; border: none; color: white;">Destinations</button>
-                <button class="btn btn-light" style="background: white; border: none; color: black;">Sign In</button>
+                <a href="#target-section">
+                  <button
+                    class="btn btn-light"
+                    style="background: transparent; border: none; color: white"
+                  >
+                    Destinations
+                  </button></a
+                >
+
+                <button
+                  class="btn btn-light"
+                  style="background: white; border: none; color: black"
+                >
+                  Sign In
+                </button>
               </div>
               <div class="d-md-none">
-                <button style="background: none; border: none;">
+                <button style="background: none; border: none">
                   <img src="icons/three-bars-white.svg" alt="Menu" />
                 </button>
               </div>
             </div>
-      
           </div>
         </div>
       </header>
-      
-      
 
       <hr style="border: 1px solid white" />
-      <div class="hero-content">
+      <div class="hero-content" >
         <div class="hero-header">
           <label style="color: white; font-weight: bold"
             >YEAR LONG TRAVEL</label
           >
-          <h1 style="font-weight: bold">
+          <h1 class style="font-weight: bold">
             Book your next<br />
             destination
           </h1>
         </div>
 
         <!-- Booking form -->
-
-        <div class="row booking-form">
-          <div class="col-md-3">
-            <label for="destination">Destination</label>
-            <select class="form-select" name="destination">
-              <option selected>Select Destination</option>
-              <option>Paris</option>
-              <option>San Francisco</option>
-              <option>Sydney</option>
-              <option>Tokyo</option>
-            </select>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-6">
-                <label for="date-from">From</label>
-                <input type="date" name="date-from" class="form-control" />
-              </div>
-              <div class="col-6">
-                <label for="date-to">To</label>
-                <input type="date" name="date-to" class="form-control" />
+        <form>
+          <div class="row booking-form">
+            <div class="col-md-3">
+              <label for="destination">Destination</label>
+              <select class="form-select" name="destination" required>
+                <option value="" disabled selected>Select Destination</option>
+                <option>Paris</option>
+                <option>San Francisco</option>
+                <option>Sydney</option>
+                <option>Tokyo</option>
+              </select>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-6">
+                  <label for="date-from">From</label>
+                  <input
+                    type="date"
+                    name="date-from"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="date-to">To</label>
+                  <input
+                    type="date"
+                    name="date-to"
+                    class="form-control"
+                    required
+                  />
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-2">
-            <label for="guests">Guests</label>
-            <input
-              name="guests"
-              type="number"
-              class="form-control"
-              placeholder="How many guests?"
-              min="1"
-              max="10"
-            />
-          </div>
-          <div
-            class="col-md-1"
-            style="padding-top: 5%; display: flex; justify-content: center"
-          >
-            <button
-              class="btn btn-primary"
-              style="padding-right: 4vh; padding-left: 4vh"
+        
+            <div class="col-md-2">
+              <label for="guests">Guests</label>
+              <input
+                name="guests"
+                type="number"
+                class="form-control"
+                placeholder="How many guests?"
+                min="1"
+                max="10"
+                required
+              />
+            </div>
+            
+            <div
+              class="col-md-1"
+              style="padding-top: 5%; display: flex; justify-content: center"
             >
-              <img src="/icons/arrow-right.svg" />
-            </button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="padding-right: 4vh; padding-left: 4vh"
+              >
+                <img src="/icons/arrow-right.svg" />
+              </button>
+            </div>
           </div>
-        </div>
-      </div>
+        </form>
+        
     </section>
 
     <section class="main-content">
       <div class="destination">
         <h2>Destinations</h2>
-        <div class="row">
+        <div class="row" id="target-section">
           <div class="col-md-4">
             <p>
               Lorem ipsum dolor sit amet, adventure travel mountains, beach
