@@ -72,13 +72,18 @@
             </select>
           </div>
           <div class="col-md">
-            <label for="date-from">From</label>
-            <input type="date" name="date-from" class="form-control" />
+            <div class="row">
+              <div class="col-6">
+                <label for="date-from">From</label>
+                <input type="date" name="date-from" class="form-control" />
+              </div>
+              <div class="col-6">
+                <label for="date-to">To</label>
+                <input type="date" name="date-to" class="form-control" />
+              </div>
+            </div>
           </div>
-          <div class="col-md">
-            <label for="date-to">To</label>
-            <input type="date" name="date-to" class="form-control" />
-          </div>
+
           <div class="col-md">
             <label for="guests">Guests</label>
             <input
@@ -90,7 +95,10 @@
               max="10"
             />
           </div>
-          <div class="col-md">
+          <div
+            class="col-md-2"
+            style="padding-top: 5%; display: flex; justify-content: center"
+          >
             <button class="btn btn-primary">
               <img src="/icons/arrow-right.svg" />
             </button>
@@ -101,15 +109,15 @@
 
     <section class="main-content">
       <div class="destination">
-        <h2 style = "padding-top: 10%;">Destinations</h2>
+        <h2 style="padding-top: 10%">Destinations</h2>
         <div class="row">
           <div class="col-md-4">
             <p>
               Lorem ipsum dolor sit amet, adventure travel mountains, beach
               resorts and cultural experiences await. Pack your bags and get
-              ready to explore the world! From bustling cities to tranquil
-              countryside getaways, there's a destination for every type of
-              traveler.
+              ready to <b>explore the world!</b> From bustling cities to
+              tranquil countryside getaways, there's a destination for every
+              type of traveler.
             </p>
           </div>
           <div class="col-md-4">
@@ -124,7 +132,7 @@
           </div>
           <div class="col-md-4">
             <p>
-              For those seeking a bit of relaxation, head to the spas and
+              For those seeking a bit of relaxation, <b>head to the spas</b> and
               resorts of the English countryside. Indulge in a luxurious massage
               or take a dip in a hot spring. If you're looking for something a
               bit more active, strap on your hiking boots and tackle the rugged
@@ -140,7 +148,10 @@
             <img src="images/destinations/paris.jpg" class="destination-img" />
           </div>
           <div class="col-6 col-md-3 d-flex justify-content-center mb-3">
-            <img src="images/destinations/san-francisco.jpg" class="destination-img" />
+            <img
+              src="images/destinations/san-francisco.jpg"
+              class="destination-img"
+            />
           </div>
           <div class="col-6 col-md-3 d-flex justify-content-center mb-3">
             <img src="images/destinations/sydney.jpg" class="destination-img" />
@@ -150,12 +161,12 @@
           </div>
         </div>
       </div>
-      
+    </section>
 
     <footer>
       <div class="row footer-row">
         <div class="col-md-2" style="padding-bottom: 5%">
-          <h3>Links</h3>
+          <h3 style="padding-top: 5%">Links</h3>
           <a href="#" style="display: block">Home</a>
           <a href="#" style="display: block">Destinations</a>
           <a href="#" style="display: block">About</a>
@@ -173,7 +184,13 @@
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Email" />
               <div class="input-group-append">
-                <button class="btn btn-success" type="button" style="border-radius: 0;">Subscribe</button>
+                <button
+                  class="btn btn-success"
+                  type="button"
+                  style="border: 0px; border-radius: 0"
+                >
+                  Subscribe
+                </button>
               </div>
             </div>
           </form>

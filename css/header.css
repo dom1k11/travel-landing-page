@@ -60,9 +60,16 @@ h1 {
 
 .btn-primary {
   background-color: #ffc107;
-  width: 100%;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 75%;
+  border: none;
+  padding: 10px 20px;
 }
+
 
 .booking-form label {
   color: white;
