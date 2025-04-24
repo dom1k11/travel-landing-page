@@ -23,29 +23,40 @@
   </head>
   <body>
     <section class="hero-block">
-      <header>
-        <!-- left menu -->
-        <div>
-          <span class="search-prefix">
-            <img src="/icons/search-white.svg" style="padding-right: 10px" />
-          </span>
-          <input class="search-field" type="text" placeholder="Search" />
-        </div>
-        <!-- Search -->
-        <img src="./icons/globe-white.svg" />
-        <div>
-          <!-- right menu -->
-          <button
-            type="button"
-            class="btn btn-light"
-            style="background-color: transparent; border: none; color: white"
-          >
-            Destinations
-          </button>
-          <button type="button" class="btn btn-light">Sign In</button>
-          <!-- <img src="./icons/three-bars-white.svg" alt="Menu" /> -->
+      <header class="py-3">
+        <div class="container">
+          <div class="row align-items-center">
+      
+            
+            <div class="col-4 d-flex justify-content-start">
+              <img src = "/icons/search-white.svg">
+              <input class="form-control search-field" type="text" placeholder="Search" />
+            </div>
+      
+           
+            <div class="col-4 d-flex justify-content-center">
+              <img src="./icons/globe-white.svg" alt="Logo" />
+            </div>
+      
+         
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <div class="d-none d-md-flex gap-2">
+                <button class="btn btn-light" style="background: transparent; border: none; color: white;">Destinations</button>
+                <button class="btn btn-light" style="background: white; border: none; color: black;">Sign In</button>
+              </div>
+              <div class="d-md-none">
+                <button style="background: none; border: none;">
+                  <img src="icons/three-bars-white.svg" alt="Menu" />
+                </button>
+              </div>
+            </div>
+      
+          </div>
         </div>
       </header>
+      
+      
+
       <hr style="border: 1px solid white" />
       <div class="hero-content">
         <div class="hero-header">
@@ -61,7 +72,7 @@
         <!-- Booking form -->
 
         <div class="row booking-form">
-          <div class="col-md">
+          <div class="col-md-3">
             <label for="destination">Destination</label>
             <select class="form-select" name="destination">
               <option selected>Select Destination</option>
@@ -71,7 +82,7 @@
               <option>Tokyo</option>
             </select>
           </div>
-          <div class="col-md">
+          <div class="col-md-6">
             <div class="row">
               <div class="col-6">
                 <label for="date-from">From</label>
@@ -84,7 +95,7 @@
             </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-md-2">
             <label for="guests">Guests</label>
             <input
               name="guests"
@@ -96,10 +107,13 @@
             />
           </div>
           <div
-            class="col-md-2"
+            class="col-md-1"
             style="padding-top: 5%; display: flex; justify-content: center"
           >
-            <button class="btn btn-primary">
+            <button
+              class="btn btn-primary"
+              style="padding-right: 4vh; padding-left: 4vh"
+            >
               <img src="/icons/arrow-right.svg" />
             </button>
           </div>
@@ -109,7 +123,7 @@
 
     <section class="main-content">
       <div class="destination">
-        <h2 style="padding-top: 10%">Destinations</h2>
+        <h2>Destinations</h2>
         <div class="row">
           <div class="col-md-4">
             <p>
@@ -141,23 +155,54 @@
           </div>
         </div>
       </div>
-
       <div class="container images-row">
         <div class="row justify-content-center">
-          <div class="col-6 col-md-3 d-flex justify-content-center mb-3">
-            <img src="images/destinations/paris.jpg" class="destination-img" />
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-3 px-1">
+            <div
+              class="img-wrapper"
+              style="
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+              "
+            >
+              <img
+                src="images/destinations/paris.jpg"
+                class="destination-img"
+              />
+            </div>
           </div>
-          <div class="col-6 col-md-3 d-flex justify-content-center mb-3">
-            <img
-              src="images/destinations/san-francisco.jpg"
-              class="destination-img"
-            />
+
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-3 px-1">
+            <div class="img-wrapper">
+              <img
+                src="images/destinations/san-francisco.jpg"
+                class="destination-img"
+              />
+            </div>
           </div>
-          <div class="col-6 col-md-3 d-flex justify-content-center mb-3">
-            <img src="images/destinations/sydney.jpg" class="destination-img" />
+
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-3 px-1">
+            <div class="img-wrapper">
+              <img
+                src="images/destinations/sydney.jpg"
+                class="destination-img"
+              />
+            </div>
           </div>
-          <div class="col-6 col-md-3 d-flex justify-content-center mb-3">
-            <img src="images/destinations/tokyo.jpg" class="destination-img" />
+
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-3 px-1">
+            <div
+              class="img-wrapper"
+              style="
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+              "
+            >
+              <img
+                src="images/destinations/tokyo.jpg"
+                class="destination-img"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -166,7 +211,7 @@
     <footer>
       <div class="row footer-row">
         <div class="col-md-2" style="padding-bottom: 5%">
-          <h3 style="padding-top: 5%">Links</h3>
+          <h3>Links</h3>
           <a href="#" style="display: block">Home</a>
           <a href="#" style="display: block">Destinations</a>
           <a href="#" style="display: block">About</a>
@@ -174,7 +219,7 @@
         </div>
 
         <div class="col"></div>
-        <div class="col-md-4">
+        <div class="col-md">
           <h3>Newsletter</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
